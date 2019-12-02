@@ -3,10 +3,10 @@
 #include "FastNoise.h"
 
 extern "C" {
-	__declspec(dllexport) float generate(float x, float y, float z);
+	__declspec(dllexport) float generate(float x, float y, float z, int* material);
 }
 
-float generate(float x, float y, float z)
+float generate(float x, float y, float z, int* material)
 {
 	float value;
 
@@ -22,9 +22,13 @@ float generate(float x, float y, float z)
 
 	noiseValue = noise.GetNoise(x, y, z);
 
+	noiseValue = noiseValue * 10.0f;
+
 	noiseValue = noiseValue - y;
 
-	value = noiseValue;
 
+
+	value = noiseValue;
+	material = 0;
 	return value;
 }
