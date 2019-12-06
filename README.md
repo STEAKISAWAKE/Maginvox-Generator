@@ -11,6 +11,9 @@ Is the Definition from google but that doesn't explain much.
 Marching cubes is in the most basic explaination
 A point in 3d space with a value attached, that value is then used to find how its verticies should be placed.
 
+tldr; Points in space have a value
 
 Other Resources
 http://paulbourke.net/geometry/polygonise/
+
+
