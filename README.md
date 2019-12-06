@@ -15,5 +15,6 @@ tldr; Points in space have a value
 
 Other Resources
 http://paulbourke.net/geometry/polygonise/
+
 https://www.youtube.com/watch?v=M3iI2l0ltbE Great Video by Sebastian Lague
 
